@@ -11,7 +11,6 @@
 //  See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html
 //
 
-Script.include("libraries/globals.js");
 
 var delayScale = 100.0;
 var fanoutScale = 10.0;
@@ -95,7 +94,7 @@ var delaySlider = Overlays.addOverlay("image", {
                     // alternate form of expressing bounds
                     bounds: { x: 100, y: delayY, width: 150, height: sliderHeight},
                     subImage: { x: 46, y: 0, width: 200, height: 71  },
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/slider.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/slider.png",
                     color: { red: 255, green: 255, blue: 255},
                     alpha: 1
                 });
@@ -109,7 +108,7 @@ var delayThumb = Overlays.addOverlay("image", {
                     y: delayY + 9,
                     width: 18,
                     height: 17,
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/thumb.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/thumb.png",
                     color: { red: 255, green: 0, blue: 0},
                     alpha: 1
                 });
@@ -133,7 +132,7 @@ var fanoutSlider = Overlays.addOverlay("image", {
                     // alternate form of expressing bounds
                     bounds: { x: 100, y: fanoutY, width: 150, height: sliderHeight},
                     subImage: { x: 46, y: 0, width: 200, height: 71  },
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/slider.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/slider.png",
                     color: { red: 255, green: 255, blue: 255},
                     alpha: 1
                 });
@@ -147,7 +146,7 @@ var fanoutThumb = Overlays.addOverlay("image", {
                     y: fanoutY + 9,
                     width: 18,
                     height: 17,
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/thumb.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/thumb.png",
                     color: { red: 255, green: 255, blue: 0},
                     alpha: 1
                 });
@@ -172,7 +171,7 @@ var speedSlider = Overlays.addOverlay("image", {
                     // alternate form of expressing bounds
                     bounds: { x: 100, y: speedY, width: 150, height: sliderHeight},
                     subImage: { x: 46, y: 0, width: 200, height: 71  },
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/slider.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/slider.png",
                     color: { red: 255, green: 255, blue: 255},
                     alpha: 1
                 });
@@ -186,7 +185,7 @@ var speedThumb = Overlays.addOverlay("image", {
                     y: speedY+9,
                     width: 18,
                     height: 17,
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/thumb.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/thumb.png",
                     color: { red: 0, green: 255, blue: 0},
                     alpha: 1
                 });
@@ -211,7 +210,7 @@ var factorSlider = Overlays.addOverlay("image", {
                     // alternate form of expressing bounds
                     bounds: { x: 100, y: factorY, width: 150, height: sliderHeight},
                     subImage: { x: 46, y: 0, width: 200, height: 71  },
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/slider.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/slider.png",
                     color: { red: 255, green: 255, blue: 255},
                     alpha: 1
                 });
@@ -225,7 +224,7 @@ var factorThumb = Overlays.addOverlay("image", {
                     y: factorY+9,
                     width: 18,
                     height: 17,
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/thumb.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/thumb.png",
                     color: { red: 0, green: 0, blue: 255},
                     alpha: 1
                 });
@@ -250,7 +249,7 @@ var localFactorSlider = Overlays.addOverlay("image", {
                     // alternate form of expressing bounds
                     bounds: { x: 100, y: localFactorY, width: 150, height: sliderHeight},
                     subImage: { x: 46, y: 0, width: 200, height: 71  },
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/slider.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/slider.png",
                     color: { red: 255, green: 255, blue: 255},
                     alpha: 1
                 });
@@ -264,7 +263,7 @@ var localFactorThumb = Overlays.addOverlay("image", {
                     y: localFactorY+9,
                     width: 18,
                     height: 17,
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/thumb.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/thumb.png",
                     color: { red: 0, green: 128, blue: 128},
                     alpha: 1
                 });
@@ -289,7 +288,7 @@ var combFilterSlider = Overlays.addOverlay("image", {
                     // alternate form of expressing bounds
                     bounds: { x: 100, y: combFilterY, width: 150, height: sliderHeight},
                     subImage: { x: 46, y: 0, width: 200, height: 71  },
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/slider.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/slider.png",
                     color: { red: 255, green: 255, blue: 255},
                     alpha: 1
                 });
@@ -303,7 +302,7 @@ var combFilterThumb = Overlays.addOverlay("image", {
                     y: combFilterY+9,
                     width: 18,
                     height: 17,
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/thumb.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/thumb.png",
                     color: { red: 128, green: 128, blue: 0},
                     alpha: 1
                 });
@@ -329,7 +328,7 @@ var reflectiveSlider = Overlays.addOverlay("image", {
                     // alternate form of expressing bounds
                     bounds: { x: 100, y: reflectiveY, width: 150, height: sliderHeight},
                     subImage: { x: 46, y: 0, width: 200, height: 71  },
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/slider.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/slider.png",
                     color: { red: 255, green: 255, blue: 255},
                     alpha: 1
                 });
@@ -343,7 +342,7 @@ var reflectiveThumb = Overlays.addOverlay("image", {
                     y: reflectiveY+9,
                     width: 18,
                     height: 17,
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/thumb.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/thumb.png",
                     color: { red: 255, green: 255, blue: 255},
                     alpha: 1
                 });
@@ -368,7 +367,7 @@ var diffusionSlider = Overlays.addOverlay("image", {
                     // alternate form of expressing bounds
                     bounds: { x: 100, y: diffusionY, width: 150, height: sliderHeight},
                     subImage: { x: 46, y: 0, width: 200, height: 71  },
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/slider.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/slider.png",
                     color: { red: 255, green: 255, blue: 255},
                     alpha: 1
                 });
@@ -382,7 +381,7 @@ var diffusionThumb = Overlays.addOverlay("image", {
                     y: diffusionY+9,
                     width: 18,
                     height: 17,
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/thumb.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/thumb.png",
                     color: { red: 0, green: 255, blue: 255},
                     alpha: 1
                 });
@@ -407,7 +406,7 @@ var absorptionSlider = Overlays.addOverlay("image", {
                     // alternate form of expressing bounds
                     bounds: { x: 100, y: absorptionY, width: 150, height: sliderHeight},
                     subImage: { x: 46, y: 0, width: 200, height: 71  },
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/slider.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/slider.png",
                     color: { red: 255, green: 255, blue: 255},
                     alpha: 1
                 });
@@ -421,7 +420,7 @@ var absorptionThumb = Overlays.addOverlay("image", {
                     y: absorptionY+9,
                     width: 18,
                     height: 17,
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/thumb.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/thumb.png",
                     color: { red: 255, green: 0, blue: 255},
                     alpha: 1
                 });
@@ -446,7 +445,7 @@ var originalSlider = Overlays.addOverlay("image", {
                     // alternate form of expressing bounds
                     bounds: { x: 100, y: originalY, width: 150, height: sliderHeight},
                     subImage: { x: 46, y: 0, width: 200, height: 71  },
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/slider.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/slider.png",
                     color: { red: 255, green: 255, blue: 255},
                     alpha: 1
                 });
@@ -460,7 +459,7 @@ var originalThumb = Overlays.addOverlay("image", {
                     y: originalY+9,
                     width: 18,
                     height: 17,
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/thumb.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/thumb.png",
                     color: { red: 128, green: 128, blue: 0},
                     alpha: 1
                 });
@@ -485,7 +484,7 @@ var echoesSlider = Overlays.addOverlay("image", {
                     // alternate form of expressing bounds
                     bounds: { x: 100, y: echoesY, width: 150, height: sliderHeight},
                     subImage: { x: 46, y: 0, width: 200, height: 71  },
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/slider.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/slider.png",
                     color: { red: 255, green: 255, blue: 255},
                     alpha: 1
                 });
@@ -499,7 +498,7 @@ var echoesThumb = Overlays.addOverlay("image", {
                     y: echoesY+9,
                     width: 18,
                     height: 17,
-                    imageURL: HIFI_PUBLIC_BUCKET + "images/thumb.png",
+                    imageURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/images/thumb.png",
                     color: { red: 128, green: 128, blue: 0},
                     alpha: 1
                 });

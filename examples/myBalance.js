@@ -11,8 +11,6 @@
 //  See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html
 //
 
-Script.include("libraries/globals.js");
-
 var Controller = Controller || {};
 var Overlays = Overlays || {};
 var Script = Script || {};
@@ -20,7 +18,7 @@ var Account = Account || {};
 
 (function () {
     "use strict";
-    var iconUrl = HIFI_PUBLIC_BUCKET + 'images/tools/',
+    var iconUrl = 'http://highfidelity-public.s3-us-west-1.amazonaws.com/images/tools/',
         overlayWidth = 150,
         overlayHeight = 50,
         overlayTopOffset = 15,

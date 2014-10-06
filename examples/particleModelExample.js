@@ -11,8 +11,6 @@
 //  See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html
 //
 
-Script.include("libraries/globals.js");
-
 var count = 0;
 var stopAfter = 100;
 
@@ -22,7 +20,7 @@ var modelPropertiesA = {
     gravity: { x: 0, y: 0, z: 0 },
     damping: 0, 
     radius : 0.25,
-    modelURL: HIFI_PUBLICK_BUCKET + "meshes/Feisar_Ship.FBX",
+    modelURL: "http://highfidelity-public.s3-us-west-1.amazonaws.com/meshes/Feisar_Ship.FBX",
     lifetime: 20
 };
 
@@ -32,7 +30,7 @@ var modelPropertiesB = {
     gravity: { x: 0, y: 0, z: 0 },
     damping: 0, 
     radius : 0.25,
-    modelURL: HIFI_PUBLIC_BUCKET + "meshes/newInvader16x16.svo",
+    modelURL: "https://s3-us-west-1.amazonaws.com/highfidelity-public/meshes/newInvader16x16.svo",
     modelScale: 450,
     modelTranslation: { x: -1.3, y: -1.3, z: -1.3 },
     lifetime: 20

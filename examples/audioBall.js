@@ -13,9 +13,7 @@
 //  See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html
 //
 
-Script.include("libraries/globals.js");
-
-var sound = new Sound(HIFI_PUBLIC_BUCKET + "sounds/Animals/mexicanWhipoorwill.raw");
+var sound = new Sound("https://s3-us-west-1.amazonaws.com/highfidelity-public/sounds/Animals/mexicanWhipoorwill.raw");
 var CHANCE_OF_PLAYING_SOUND = 0.01;
 
 var FACTOR = 0.75;

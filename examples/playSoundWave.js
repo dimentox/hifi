@@ -9,9 +9,7 @@
 //  See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html
 //
 
-Script.include("libraries/globals.js");
-
-var soundClip = new Sound(HIFI_PUBLIC_BUCKET + "sounds/Cocktail%20Party%20Snippets/Walken1.wav");
+var soundClip = new Sound("https://s3-us-west-1.amazonaws.com/highfidelity-public/sounds/Cocktail%20Party%20Snippets/Walken1.wav");
 
 function playSound() {
     var options = new AudioInjectionOptions();
